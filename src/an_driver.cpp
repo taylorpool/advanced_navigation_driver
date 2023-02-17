@@ -219,7 +219,7 @@ int main(int argc, char *argv[]) {
             // system_state_packet.latitude * RADIANS_TO_DEGREES;
             // nav_sat_fix_msg.longitude =
             // system_state_packet.longitude * RADIANS_TO_DEGREES;
-            nav_sat_fix_msg.altitude = system_state_packet.height;
+            // nav_sat_fix_msg.altitude = system_state_packet.height;
             nav_sat_fix_msg.position_covariance = {
                 pow(system_state_packet.standard_deviation[1], 2),
                 0.0,
